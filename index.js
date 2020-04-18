@@ -8,7 +8,7 @@ db.defaults({ students: [] }).write();
 
 const result = db
   .get("students")
-  .push({ name: process.argv[2], age: process.argv[3] })
+  .push({ name: "Emin", age: "27" })
   .write();
 
 console.log(result);
